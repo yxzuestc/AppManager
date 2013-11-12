@@ -20,6 +20,10 @@ public class InstalledAppFinder {
 		searchInstalledApp();
 	}
 	
+	/**
+	 * 获取安装的应用程序信息
+	 * @return
+	 */
 	public ArrayList<AppInfo> getInstalledAppList(){
 		return installedAppList;
 	}

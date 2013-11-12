@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="50dip" >
+    android:layout_height="wrap_content" >
 
     <ImageView
         android:id="@+id/imgApp"
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent" >
+        android:layout_width="50dp"
+        android:layout_height="50dp" >
     </ImageView>
 
     <RelativeLayout
@@ -15,37 +15,37 @@
         android:layout_marginLeft="10dip" >
 
         <TextView
-            android:id="@+id/tvLabel"
+            android:id="@+id/textView_appNameLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="AppLable : " >
+            android:text="应用名 : " >
         </TextView>
 
         <TextView
-            android:id="@+id/tvAppLabel"
+            android:id="@+id/textView_appName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="3dip"
-            android:layout_toRightOf="@id/tvLabel"
+            android:layout_toRightOf="@id/textView_appNameLabel"
             android:text="Label"
-            android:textColor="#FFD700" >
+            >
         </TextView>
 
         <TextView
-            android:id="@+id/tvName"
+            android:id="@+id/textView_packageLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tvLabel"
+            android:layout_below="@id/textView_appNameLabel"
             android:text="包名:" >
         </TextView>
 
         <TextView
-            android:id="@+id/tvPkgName"
+            android:id="@+id/textView_packageName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/tvAppLabel"
-            android:layout_below="@id/tvAppLabel"
-            android:textColor="#FFD700" >
+            android:layout_alignLeft="@id/textView_appName"
+            android:layout_below="@id/textView_appName"
+            >
         </TextView>
     </RelativeLayout>
 
